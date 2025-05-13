@@ -1,0 +1,232 @@
+@prefix schema: <https://schema.org/> .
+@prefix vdl: <https://w3id.org/vdl#> .
+@prefix ob: <https://purl.imsglobal.org/spec/vc/ob/vocab.html#> .
+@prefix citizenship: <https://w3id.org/citizenship#> .
+@prefix credentials: <https://www.w3.org/2018/credentials#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix aamva: <https://w3id.org/vdl/aamva#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> a ob:Achievement ;
+  ob:achievementType "BachelorDegree" ;
+  schema:name "Bachelor Degree" ;
+  schema:description "This credential represents a bachelor degree" ;
+  ob:Criteria [
+    a ob:Criteria ;
+    ob:narrative "Fulfill requirements set by issuing institution"
+  ], [
+    a ob:Criteria ;
+    ob:narrative "Fulfill requirements set by issuing institution"
+  ], [
+    a ob:Criteria ;
+    ob:narrative "Fulfill requirements set by issuing institution"
+  ] .
+
+<urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb> a credentials:VerifiableCredential, vdl:Iso18013DriversLicenseCredential ;
+  schema:name "Utopia Driver's License" ;
+  schema:description "A license granting driving privileges in Utopia." ;
+  credentials:issuer <did:example:bob> ;
+  credentials:validFrom "2023-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:validUntil "2028-12-03T12:19:52Z"^^xsd:dateTime ;
+  schema:image <data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUg...kSuQmCC> ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .
+
+<did:example:bob> <https://w3id.org/security#verificationMethod> <did:example:bob#key-1>, <did:example:bob#key-2> ;
+  <https://w3id.org/security#assertionMethod> <did:example:bob#key-1>, <did:example:bob#key-2> ;
+  <https://w3id.org/security#authenticationMethod> <did:example:bob#key-1>, <did:example:bob#key-2> ;
+  <https://w3id.org/security#capabilityInvocationMethod> <did:example:bob#key-1>, <did:example:bob#key-2> ;
+  <https://w3id.org/security#capabilityDelegationMethod> <did:example:bob#key-1>, <did:example:bob#key-2> .
+
+<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> a schema:Person, citizenship:PermanentResident, ob:AchievementSubject, citizenship:EmployablePerson, vdl:LicensedDriver ;
+  ob:Achievement <urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> ;
+  schema:image <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4v43hPwAHIgK1v4tX6wAAAABJRU5ErkJggg==> ;
+  schema:givenName "JOHN" ;
+  schema:additionalName "JACOB" ;
+  schema:familyName "DOE" ;
+  schema:gender "MALE", "Male" ;
+  citizenship:residentSince "2015-01-01T00:00:00Z"^^xsd:dateTime ;
+  citizenship:birthCountry "Bahamas" ;
+  schema:birthDate "1958-07-17T00:00:00Z"^^xsd:dateTime ;
+  citizenship:employmentAuthorizationDocument [
+    a citizenship:EmploymentAuthorizationDocument ;
+    schema:identifier "83627465" ;
+    citizenship:lprCategory "C09" ;
+    citizenship:lprNumber "999-999-999"
+  ], [
+    a citizenship:EmploymentAuthorizationDocument ;
+    schema:identifier "83627465" ;
+    citizenship:lprCategory "C09" ;
+    citizenship:lprNumber "999-999-999"
+  ], [
+    a citizenship:EmploymentAuthorizationDocument ;
+    schema:identifier "83627465" ;
+    citizenship:lprCategory "C09" ;
+    citizenship:lprNumber "999-999-999"
+  ] ;
+  citizenship:commuterClassification "C1" ;
+  citizenship:permanentResidentCard [
+    a citizenship:PermanentResidentCard ;
+    schema:identifier "83627465" ;
+    citizenship:lprCategory "C09" ;
+    citizenship:lprNumber "999-999-999"
+  ], [
+    a citizenship:PermanentResidentCard ;
+    schema:identifier "83627465" ;
+    citizenship:lprCategory "C09" ;
+    citizenship:lprNumber "999-999-999"
+  ], [
+    a citizenship:PermanentResidentCard ;
+    schema:identifier "83627465" ;
+    citizenship:lprCategory "C09" ;
+    citizenship:lprNumber "999-999-999"
+  ] ;
+  vdl:license [
+    a vdl:Iso18013DriversLicense ;
+    vdl:documentNumber "542426814" ;
+    vdl:familyName "DOE" ;
+    vdl:givenName "JOHN" ;
+    vdl:portrait <data:image/jpeg;base64,/9j/4AAQSkZJR...RSClooooP/2Q==> ;
+    vdl:issueDate "2023-01-15T10:00:00-07:00"^^xsd:dateTime ;
+    vdl:expiryDate "2028-08-27T12:00:00-06:00"^^xsd:dateTime ;
+    vdl:issuingCountry "UA" ;
+    vdl:issuingAuthority "UADMV" ;
+    vdl:drivingPrivileges "[{\"codes\":[{\"code\":\"D\"}],\"expiry_date\":\"2027-01-01\",\"issue_date\":\"2019-01-01\",\"vehicle_category_code\":\"D\"},{\"codes\":[{\"code\":\"C\"}],\"expiry_date\":\"2017-01-01\",\"issue_date\":\"2019-01-01\",\"vehicle_category_code\":\"C\"}]"^^rdf:JSON ;
+    vdl:unDistinguishingSign "UTA" ;
+    aamva:akaSuffix "1ST" ;
+    vdl:sex "2"^^xsd:unsignedInt ;
+    aamva:familyNameTruncation "N" ;
+    aamva:givenNameTruncation "N"
+  ], [
+    a vdl:Iso18013DriversLicense ;
+    vdl:documentNumber "542426814" ;
+    vdl:familyName "DOE" ;
+    vdl:givenName "JOHN" ;
+    vdl:portrait <data:image/jpeg;base64,/9j/4AAQSkZJR...RSClooooP/2Q==> ;
+    vdl:issueDate "2023-01-15T10:00:00-07:00"^^xsd:dateTime ;
+    vdl:expiryDate "2028-08-27T12:00:00-06:00"^^xsd:dateTime ;
+    vdl:issuingCountry "UA" ;
+    vdl:issuingAuthority "UADMV" ;
+    vdl:drivingPrivileges "[{\"codes\":[{\"code\":\"D\"}],\"expiry_date\":\"2027-01-01\",\"issue_date\":\"2019-01-01\",\"vehicle_category_code\":\"D\"},{\"codes\":[{\"code\":\"C\"}],\"expiry_date\":\"2017-01-01\",\"issue_date\":\"2019-01-01\",\"vehicle_category_code\":\"C\"}]"^^rdf:JSON ;
+    vdl:unDistinguishingSign "UTA" ;
+    aamva:akaSuffix "1ST" ;
+    vdl:sex "2"^^xsd:unsignedInt ;
+    aamva:familyNameTruncation "N" ;
+    aamva:givenNameTruncation "N"
+  ], [
+    a vdl:Iso18013DriversLicense ;
+    vdl:documentNumber "542426814" ;
+    vdl:familyName "DOE" ;
+    vdl:givenName "JOHN" ;
+    vdl:portrait <data:image/jpeg;base64,/9j/4AAQSkZJR...RSClooooP/2Q==> ;
+    vdl:issueDate "2023-01-15T10:00:00-07:00"^^xsd:dateTime ;
+    vdl:expiryDate "2028-08-27T12:00:00-06:00"^^xsd:dateTime ;
+    vdl:issuingCountry "UA" ;
+    vdl:issuingAuthority "UADMV" ;
+    vdl:drivingPrivileges "[{\"codes\":[{\"code\":\"D\"}],\"expiry_date\":\"2027-01-01\",\"issue_date\":\"2019-01-01\",\"vehicle_category_code\":\"D\"},{\"codes\":[{\"code\":\"C\"}],\"expiry_date\":\"2017-01-01\",\"issue_date\":\"2019-01-01\",\"vehicle_category_code\":\"C\"}]"^^rdf:JSON ;
+    vdl:unDistinguishingSign "UTA" ;
+    aamva:akaSuffix "1ST" ;
+    vdl:sex "2"^^xsd:unsignedInt ;
+    aamva:familyNameTruncation "N" ;
+    aamva:givenNameTruncation "N"
+  ] .
+
+<did:example:bob#key-1> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:bob> ;
+  <https://w3id.org/security#publicKeyMultibase> "z6MkgQ7h9QaQLHrEzahVBLALP8M8MkWSCQbUP142xKXVRM1p"^^<https://w3id.org/security#multibase> .
+
+<did:example:bob#key-2> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:bob> ;
+  <https://w3id.org/security#publicKeyMultibase> "zUC7DYKpSJeXZZHN6HTMxiwLmtoKtQwGnrJVM7QPtqxJaf6YUcYTpB4uhnfgAgUANV4FUpsXFyfMMWAjxVEJg2kxLXEUVNZ7mNzDju9dbbzrEJLBSCozhiW5pD2h6buxFjhdY5M"^^<https://w3id.org/security#multibase> .
+
+<urn:uuid:47c5d080-9b0b-471e-b32d-85ec95e73acb> a credentials:VerifiableCredential, ob:OpenBadgeCredential ;
+  schema:name "Name of this Open Badge Instance" ;
+  credentials:issuer <did:example:dave> ;
+  credentials:validFrom "2023-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:validUntil "2028-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .
+
+<did:example:dave> <https://w3id.org/security#verificationMethod> <did:example:dave#key-2>, <did:example:dave#key-1> ;
+  <https://w3id.org/security#assertionMethod> <did:example:dave#key-2>, <did:example:dave#key-1> ;
+  <https://w3id.org/security#authenticationMethod> <did:example:dave#key-2>, <did:example:dave#key-1> ;
+  <https://w3id.org/security#capabilityInvocationMethod> <did:example:dave#key-2>, <did:example:dave#key-1> ;
+  <https://w3id.org/security#capabilityDelegationMethod> <did:example:dave#key-2>, <did:example:dave#key-1> .
+
+<did:example:dave#key-2> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:dave> ;
+  <https://w3id.org/security#publicKeyMultibase> "zUC7CtrJpZy6ydLfAbjFuuxNnANjBGq8qfUqWC6fpN3bgW5q3kE5tQzMEibxMHDSCVUctVNEqadK6x49YcuJ9hAiE692dT9iAxh7Qc9DAxe3pGSdCRyxpR6q3eruZUQPtmWaaGV"^^<https://w3id.org/security#multibase> .
+
+<did:example:dave#key-1> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:dave> ;
+  <https://w3id.org/security#publicKeyMultibase> "z6MkueKtvLhex8CbgY6yUuUiP9GFoCmhdyqqSCgHQcnhuoMt"^^<https://w3id.org/security#multibase> .
+
+<urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4> a credentials:VerifiableCredential, citizenship:EmploymentAuthorizationDocumentCredential ;
+  credentials:issuer <did:example:charlie> ;
+  credentials:validFrom "2023-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:validUntil "2028-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .
+
+<did:example:charlie> <https://w3id.org/security#verificationMethod> <did:example:charlie#key-2>, <did:example:charlie#key-1> ;
+  <https://w3id.org/security#assertionMethod> <did:example:charlie#key-2>, <did:example:charlie#key-1> ;
+  <https://w3id.org/security#authenticationMethod> <did:example:charlie#key-2>, <did:example:charlie#key-1> ;
+  <https://w3id.org/security#capabilityInvocationMethod> <did:example:charlie#key-2>, <did:example:charlie#key-1> ;
+  <https://w3id.org/security#capabilityDelegationMethod> <did:example:charlie#key-2>, <did:example:charlie#key-1> .
+
+<did:example:charlie#key-2> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:charlie> ;
+  <https://w3id.org/security#publicKeyMultibase> "zUC7J5vyCHBE1qTJQcRScwCacrD1adhkzTD4bSoV4cV9TVKQVZiioVPGhMwXqKTpAvMUJy5mojZuHyE42rbdy13YGcc2tqnQCDM3MSHyKkrvzXWcfTrrjzp25DaQaYK8vLDXRLz"^^<https://w3id.org/security#multibase> .
+
+<did:example:charlie#key-1> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:charlie> ;
+  <https://w3id.org/security#publicKeyMultibase> "z6MksKgR4LUL7BjwCL134B9RRxeMvYBChce3Cft5dhFGpyWs"^^<https://w3id.org/security#multibase> .
+
+<urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a> a credentials:VerifiableCredential, citizenship:PermanentResidentCardCredential ;
+  schema:name "Permanent Resident Card" ;
+  schema:description "Government of Utopia Permanent Resident Card." ;
+  credentials:issuer <did:example:alice> ;
+  credentials:validFrom "2024-12-16T00:00:00Z"^^xsd:dateTime ;
+  credentials:validUntil "2025-12-16T23:59:59Z"^^xsd:dateTime ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .
+
+<did:example:alice> <https://w3id.org/security#verificationMethod> <did:example:alice#key-2>, <did:example:alice#key-1> ;
+  <https://w3id.org/security#assertionMethod> <did:example:alice#key-2>, <did:example:alice#key-1> ;
+  <https://w3id.org/security#authenticationMethod> <did:example:alice#key-2>, <did:example:alice#key-1> ;
+  <https://w3id.org/security#capabilityInvocationMethod> <did:example:alice#key-2>, <did:example:alice#key-1> ;
+  <https://w3id.org/security#capabilityDelegationMethod> <did:example:alice#key-2>, <did:example:alice#key-1> .
+
+<did:example:alice#key-2> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:alice> ;
+  <https://w3id.org/security#publicKeyMultibase> "zUC7GuzpYrn6SjZ2WL6YV3Syav9htFwSvrSeCmcNA5YKSvpVKNfZGpKqmpx6omW2zw5KsSSDGxegfYLMMNxK2HFtE85b1MShPrWuDnznFChzJ95o9ZuzqyRJ1MVksANyzGhdgQb"^^<https://w3id.org/security#multibase> .
+
+<did:example:alice#key-1> a <https://w3id.org/security#Multikey> ;
+  <https://w3id.org/security#controller> <did:example:alice> ;
+  <https://w3id.org/security#publicKeyMultibase> "z6MkfQggpLhJoobbJPFwJYuqhrEAqwMFMbpX5duDVsWVXy93"^^<https://w3id.org/security#multibase> .
+
+<urn:uuid:c38e8f32-0d49-4e61-85c3-4cdb05b43c2e> a credentials:VerifiableCredential, ob:OpenBadgeCredential ;
+  schema:name "Name of this Open Badge Instance" ;
+  credentials:issuer <did:example:dave> ;
+  credentials:validFrom "2023-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:validUntil "2028-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .
+
+<urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c> a credentials:VerifiableCredential, citizenship:EmploymentAuthorizationDocumentCredential ;
+  credentials:issuer <did:example:charlie> ;
+  credentials:validFrom "2023-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:validUntil "2028-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .
+
+<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> a credentials:VerifiableCredential, citizenship:PermanentResidentCardCredential ;
+  schema:name "Permanent Resident Card" ;
+  schema:description "Government of Utopia Permanent Resident Card." ;
+  credentials:issuer <did:example:alice> ;
+  credentials:validFrom "2024-12-16T00:00:00Z"^^xsd:dateTime ;
+  credentials:validUntil "2025-12-16T23:59:59Z"^^xsd:dateTime ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .
+
+<urn:uuid:e3f3cb48-c144-43e7-9682-ae1ca51916cb> a credentials:VerifiableCredential, vdl:Iso18013DriversLicenseCredential ;
+  schema:name "Utopia Driver's License" ;
+  schema:description "A license granting driving privileges in Utopia." ;
+  credentials:issuer <did:example:bob> ;
+  credentials:validFrom "2023-12-03T12:19:52Z"^^xsd:dateTime ;
+  credentials:validUntil "2028-12-03T12:19:52Z"^^xsd:dateTime ;
+  schema:image <data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUg...kSuQmCC> ;
+  credentials:credentialSubject <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .

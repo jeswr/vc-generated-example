@@ -1,0 +1,43 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v2"
+  ],
+  "id": "urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4",
+  "type": [
+    "VerifiableCredential",
+    "EmploymentAuthorizationDocumentCredential"
+  ],
+  "issuer": {
+    "id": "did:example:charlie"
+  },
+  "validFrom": "2023-12-03T12:19:52Z",
+  "validUntil": "2028-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb",
+    "type": [
+      "Person",
+      "EmployablePerson"
+    ],
+    "givenName": "JOHN",
+    "additionalName": "JACOB",
+    "familyName": "DOE",
+    "gender": "Male",
+    "residentSince": "2015-01-01T00:00:00Z",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17T00:00:00Z",
+    "employmentAuthorizationDocument": {
+      "type": "EmploymentAuthorizationDocument",
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "verificationMethod": "did:example:charlie#key-2",
+    "cryptosuite": "bbs-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0DhVkBEKixxE3Rk4ZSyxMdxYMwGar8FRFyNXwgrelzqwKczeNV_7Q5QoB8PsrHH-4Q-DHkeLPRciTIXd7_pQtdKKzn0nGNX32yH6QWXDTYq8PzHc0rxW69QnIIEXc7fozOBrvYqpMc7m-JZxty7GmcQUIrD8OdimJfS3kbCn3gAzBrSOexv1SahM6DzPtdwVlzIgh6Ekldfa2GnUQLRxUh3AUP47EoPXGFfCsHX4tFv-Fz8UwgHmS2a9JTr3mHZZ9oNYv3eaSN3xUtyQHve-LOp9kDrc4hHksEDbtZkoN48KBcI0K-nJuHKzmgPBtg8UVbBTt_9G8lB2LHrr8z323R3xv1oWzVEZLmpd83Nv91rp2J07JeoQAAhQoLDQ4PjwABAgMEBQYHCAkKCwwNDkA"
+  }
+}

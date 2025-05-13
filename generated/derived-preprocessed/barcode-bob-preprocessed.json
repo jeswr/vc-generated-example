@@ -1,0 +1,69 @@
+{
+  "verifyData": {
+    "bbsProof": "i6yTp4PbldsIMuNNpF3EjJBX0b7oPF4NzrYg1nuXxMuZiQLmg9RLxk9NbKM46SjKhYWQ1okZVTa/agN2vHgsRFSh+O6/WNE1kK8NfIQtziccY1eJlwcS3Gccw85WfwcLoXXEYNezdkGpI3cNwUXQlolFmdbvaC9LRh1rGg0zbUZH1tjca7WKbvHx6Zjaro6HX/PYedm5UKFyYKwLw1Vw6qQzbCJTdxcJNYNcK2blPAstJfkEjjNqQB1mJcoW9TJOxMQn3toLSE+20HTEjEoRHEh9QZWDxY/DxZNvryjBwehcz4MHg77RqjqARdfJ9dntMnqus8ViKDEUhJhit+bvFzAA3I+0JkSzzmjdN4UQ/GJeW7OhXacDtn9jMpCPKGnIGMCBvxNOPNDaGYf+t6xBjkqZ/CRcuq3MsIBX6/mOdnpylW6qTp3emtfkJHuJkqI8OfRxvrgueBClkMhmdHECR5oncvbax+a30MIMispBakk=",
+    "proofHash": "SOFerWX19l5iO3Sqwo7208jl/9Gfb8nAOtYaDXBBUrw=",
+    "nonMandatory": [
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/vdl#LicensedDriver> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/vdl#license> _:b0 .\n",
+      "<urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb> <https://www.w3.org/2018/credentials#credentialSubject> <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .\n",
+      "_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/vdl#Iso18013DriversLicense> .\n",
+      "_:b0 <https://w3id.org/vdl#documentNumber> \"542426814\" .\n",
+      "_:b0 <https://w3id.org/vdl#drivingPrivileges> \"[{\\\"codes\\\":[{\\\"code\\\":\\\"D\\\"}],\\\"expiry_date\\\":\\\"2027-01-01\\\",\\\"issue_date\\\":\\\"2019-01-01\\\",\\\"vehicle_category_code\\\":\\\"D\\\"},{\\\"codes\\\":[{\\\"code\\\":\\\"C\\\"}],\\\"expiry_date\\\":\\\"2017-01-01\\\",\\\"issue_date\\\":\\\"2019-01-01\\\",\\\"vehicle_category_code\\\":\\\"C\\\"}]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> .\n",
+      "_:b0 <https://w3id.org/vdl#expiryDate> \"2028-08-27T12:00:00-06:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "_:b0 <https://w3id.org/vdl#familyName> \"DOE\" .\n",
+      "_:b0 <https://w3id.org/vdl#givenName> \"JOHN\" .\n",
+      "_:b0 <https://w3id.org/vdl#issueDate> \"2023-01-15T10:00:00-07:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "_:b0 <https://w3id.org/vdl#issuingAuthority> \"UADMV\" .\n",
+      "_:b0 <https://w3id.org/vdl#issuingCountry> \"UA\" .\n",
+      "_:b0 <https://w3id.org/vdl#portrait> <data:image/jpeg;base64,/9j/4AAQSkZJR...RSClooooP/2Q==> .\n",
+      "_:b0 <https://w3id.org/vdl#sex> \"2\"^^<http://www.w3.org/2001/XMLSchema#unsignedInt> .\n",
+      "_:b0 <https://w3id.org/vdl#unDistinguishingSign> \"UTA\" .\n",
+      "_:b0 <https://w3id.org/vdl/aamva#akaSuffix> \"1ST\" .\n",
+      "_:b0 <https://w3id.org/vdl/aamva#familyNameTruncation> \"N\" .\n",
+      "_:b0 <https://w3id.org/vdl/aamva#givenNameTruncation> \"N\" .\n"
+    ],
+    "mandatoryHash": "zcPS2Y6k/yuhQ+JYLjUU7s4ed0BXY1tkyjZC3705EgQ=",
+    "selectiveIndexes": [
+      0,
+      1,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "presentationHeader": {},
+    "mandatory": [
+      "<urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/vdl#Iso18013DriversLicenseCredential> .\n",
+      "<urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .\n",
+      "<urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb> <https://www.w3.org/2018/credentials#issuer> <did:example:bob> .\n",
+      "<urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb> <https://www.w3.org/2018/credentials#validFrom> \"2023-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb> <https://www.w3.org/2018/credentials#validUntil> \"2028-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n"
+    ]
+  },
+  "verificationMethod": {
+    "@context": "https://w3id.org/security/multikey/v1",
+    "id": "did:example:bob#key-2",
+    "type": "Multikey",
+    "controller": "did:example:bob",
+    "publicKeyMultibase": "zUC7DYKpSJeXZZHN6HTMxiwLmtoKtQwGnrJVM7QPtqxJaf6YUcYTpB4uhnfgAgUANV4FUpsXFyfMMWAjxVEJg2kxLXEUVNZ7mNzDju9dbbzrEJLBSCozhiW5pD2h6buxFjhdY5M"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "verificationMethod": "did:example:bob#key-2",
+    "cryptosuite": "bbs-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0DhVkBcIusk6eD25XbCDLjTaRdxIyQV9G-6DxeDc62INZ7l8TLmYkC5oPUS8ZPTWyjOOkoyoWFkNaJGVU2v2oDdrx4LERUofjuv1jRNZCvDXyELc4nHGNXiZcHEtxnHMPOVn8HC6F1xGDXs3ZBqSN3DcFF0JaJRZnW72gvS0YdaxoNM21GR9bY3Gu1im7x8emY2q6Oh1_z2HnZuVChcmCsC8NVcOqkM2wiU3cXCTWDXCtm5TwLLSX5BI4zakAdZiXKFvUyTsTEJ97aC0hPttB0xIxKERxIfUGVg8WPw8WTb68owcHoXM-DB4O-0ao6gEXXyfXZ7TJ6rrPFYigxFISYYrfm7xcwANyPtCZEs85o3TeFEPxiXluzoV2nA7Z_YzKQjyhpyBjAgb8TTjzQ2hmH_resQY5KmfwkXLqtzLCAV-v5jnZ6cpVuqk6d3prX5CR7iZKiPDn0cb64LngQpZDIZnRxAkeaJ3L22sfmt9DCDIrKQWpJoQAAhQIDBQYHkgABBQYHCAkKCwwNDg8QERITFEA"
+  }
+}

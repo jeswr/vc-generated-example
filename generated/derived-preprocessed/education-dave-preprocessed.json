@@ -1,0 +1,53 @@
+{
+  "verifyData": {
+    "bbsProof": "irX3TX0u6s/alk5zEEtEO4eXXibnuLZdDq2SckwaQIqUxaVpG0Lb9mnQawKu/Or4sx0O+l3FMh+T42ikVh+S5if49OrodY9jPotGfIYJ4NjsRUD/QNqKoZXgeThVDAopjRnP06rm89dXCgX8k8uJYvLFBUYLjj60dQ7zTMHcwAtRjF3snblUriueD029H6LAJWNHEfHCvc3w1cvGzLPZOhb4sync4XlfCNEd7uT+to4NLLNS52JUUCl4UheivKdHlRKqVBJB/9BYokXkJJEloGrPp6juqTyswb5An3yV/lgYZ7C2tpMHKtIZ92TvrvrDAj1YOVYH40vs10dh+QKdAj6HOZuUVTgdxiFCJqX3j2Y1vPOTnLYZRMa3rz2ZI6e3RqK3CYCsvRcpErSg3tvp5Q==",
+    "proofHash": "QnxaZWzDeNId5xNEVn45y9nkADiBJHfPfoQG3+NmfJc=",
+    "nonMandatory": [
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.imsglobal.org/spec/vc/ob/vocab.html#AchievementSubject> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://purl.imsglobal.org/spec/vc/ob/vocab.html#Achievement> <urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> .\n",
+      "<urn:uuid:47c5d080-9b0b-471e-b32d-85ec95e73acb> <https://www.w3.org/2018/credentials#credentialSubject> <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .\n",
+      "<urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.imsglobal.org/spec/vc/ob/vocab.html#Achievement> .\n",
+      "<urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> <https://purl.imsglobal.org/spec/vc/ob/vocab.html#Criteria> _:b0 .\n",
+      "<urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> <https://purl.imsglobal.org/spec/vc/ob/vocab.html#achievementType> \"BachelorDegree\" .\n",
+      "<urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> <https://schema.org/description> \"This credential represents a bachelor degree\" .\n",
+      "<urn:uuid:bd6d9316-f7ae-4073-a1e5-2f7f5bd22922> <https://schema.org/name> \"Bachelor Degree\" .\n",
+      "_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.imsglobal.org/spec/vc/ob/vocab.html#Criteria> .\n",
+      "_:b0 <https://purl.imsglobal.org/spec/vc/ob/vocab.html#narrative> \"Fulfill requirements set by issuing institution\" .\n"
+    ],
+    "mandatoryHash": "qdOqwvfepWENxA+g1Q5QQOUAC1gg8E3QFzrVSXNcT0A=",
+    "selectiveIndexes": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "presentationHeader": {},
+    "mandatory": [
+      "<urn:uuid:47c5d080-9b0b-471e-b32d-85ec95e73acb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.imsglobal.org/spec/vc/ob/vocab.html#OpenBadgeCredential> .\n",
+      "<urn:uuid:47c5d080-9b0b-471e-b32d-85ec95e73acb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .\n",
+      "<urn:uuid:47c5d080-9b0b-471e-b32d-85ec95e73acb> <https://www.w3.org/2018/credentials#issuer> <did:example:dave> .\n",
+      "<urn:uuid:47c5d080-9b0b-471e-b32d-85ec95e73acb> <https://www.w3.org/2018/credentials#validFrom> \"2023-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<urn:uuid:47c5d080-9b0b-471e-b32d-85ec95e73acb> <https://www.w3.org/2018/credentials#validUntil> \"2028-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n"
+    ]
+  },
+  "verificationMethod": {
+    "@context": "https://w3id.org/security/multikey/v1",
+    "id": "did:example:dave#key-2",
+    "type": "Multikey",
+    "controller": "did:example:dave",
+    "publicKeyMultibase": "zUC7CtrJpZy6ydLfAbjFuuxNnANjBGq8qfUqWC6fpN3bgW5q3kE5tQzMEibxMHDSCVUctVNEqadK6x49YcuJ9hAiE692dT9iAxh7Qc9DAxe3pGSdCRyxpR6q3eruZUQPtmWaaGV"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "verificationMethod": "did:example:dave#key-2",
+    "cryptosuite": "bbs-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0DhVkBMIq19019LurP2pZOcxBLRDuHl14m57i2XQ6tknJMGkCKlMWlaRtC2_Zp0GsCrvzq-LMdDvpdxTIfk-NopFYfkuYn-PTq6HWPYz6LRnyGCeDY7EVA_0DaiqGV4Hk4VQwKKY0Zz9Oq5vPXVwoF_JPLiWLyxQVGC44-tHUO80zB3MALUYxd7J25VK4rng9NvR-iwCVjRxHxwr3N8NXLxsyz2ToW-LMp3OF5XwjRHe7k_raODSyzUudiVFApeFIXorynR5USqlQSQf_QWKJF5CSRJaBqz6eo7qk8rMG-QJ98lf5YGGewtraTByrSGfdk7676wwI9WDlWB-NL7NdHYfkCnQI-hzmblFU4HcYhQial949mNbzzk5y2GUTGt689mSOnt0aitwmArL0XKRK0oN7b6eWhAACFAgMFBgeKAAEDBAUGBwgJCkA"
+  }
+}

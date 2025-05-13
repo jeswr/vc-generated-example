@@ -1,0 +1,49 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v4rc1",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "PermanentResidentCardCredential"
+  ],
+  "name": "Permanent Resident Card",
+  "description": "Government of Utopia Permanent Resident Card.",
+  "credentialSubject": {
+    "type": [
+      "PermanentResident",
+      "Person"
+    ],
+    "givenName": "JOHN",
+    "familyName": "DOE",
+    "gender": "MALE",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4v43hPwAHIgK1v4tX6wAAAABJRU5ErkJggg==",
+    "residentSince": "2015-01-01T00:00:00Z",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17T00:00:00Z",
+    "commuterClassification": "C1",
+    "permanentResidentCard": {
+      "type": [
+        "PermanentResidentCard"
+      ],
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999"
+    },
+    "id": "did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb"
+  },
+  "validFrom": "2024-12-16T00:00:00Z",
+  "validUntil": "2025-12-16T23:59:59Z",
+  "issuer": {
+    "id": "did:example:alice"
+  },
+  "id": "urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d",
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2025-05-13T16:41:30Z",
+    "verificationMethod": "did:example:alice#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z2rqoFm2FexYYmCwf4VeodNWKWgYb3oVkpn4Wv2N8oHNK7KvGKiFAYzHreG5gCKFv62x697TNV7ZcJjKrtBuNJfrT"
+  }
+}

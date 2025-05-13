@@ -1,0 +1,10 @@
+{
+  "did:example:alice#key-1": "zrv46iEPFzzFee7hQuExPmQjnFGZxokB2Wbp8eunTHPt84wW7sbC7pgP6yCDCumCXT3uSXRGrrt2DnHeNenqXBt5nyo",
+  "did:example:alice#key-2": "z4891mDDwT7QZKVtddk9LDcmd3rVDgahSqgGc5pHKdW5oEaS",
+  "did:example:bob#key-1": "zrv3V4FhhW8Jqj2z3tz7Bpta6hCv9UNjZyranRUcibe2C9LkJ7YFnDC8PTH7GX5uJwUgM8zJYQ6UWNRdkRcSnWK43xA",
+  "did:example:bob#key-2": "z488vRRwfNhVeyasgjzykb2LTQieYmFQYDKNzU3m1ZZsUMpu",
+  "did:example:charlie#key-1": "zrv45FgakNAgByXWhThXYUB4GbTFBWZfL8ExDRcuPkiYJXMbunuPdsZD9d1ZAPCNDCtek6o4mEXCj4nmjpnVHRfpyEb",
+  "did:example:charlie#key-2": "z488xxyA4XrowiiR5nEb7mvNPX1DGn9BCCk27MJWpmPR5Lf6",
+  "did:example:dave#key-1": "zrv4afixDMaMLzLwVKoXJMPeZaiiYtPYN8Hodvhe9WBB9LJWPSi32PTdSfa2Jt5KbtPmacQhBa8iHAYdFMQH8zg5RBY",
+  "did:example:dave#key-2": "z488v4NUZKtyQP5SrYNg5kEHxqfuxUbQ7mJ6AsVEFx5tuANX"
+}

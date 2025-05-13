@@ -1,0 +1,65 @@
+{
+  "verifyData": {
+    "bbsProof": "jk7z27onvMAmGXZr5VvwBzC6UQplr1YP12QVavIspYPMgaPOfwLy56LFVhQdDK0rjSf2o1BvIg9+hC2du7REhLAg3hwxAakEOUwjPfbqcwrrHENBQqBaCrgGQZemvVUEgRbvXMmIeQIoLSrgwxLDI3vu/BW8Q5zwMMlb4p5I6oVeE4RFLMssCdwT0jua4XbKCUrrUzr0eFyTpm6BOemy7ZIBQlOA4vljyk9KKpHZxmJDBtDVsralEf8DooHU7AD1Q2qA10C7RtCMtRnzkmWdV1Of8EoWqf87JADdIUK1+mxvEV0zACuXIJA8GH8LM7gCWXzQfqRlTACg8Nacgelnvb5/gUA+05abnAyl/a73HSgRprN/BT3s8+T5m5G5aQf5B9uOl865sRv63JE+l/kYkkGnf+OM51Iu2jywGeM5Cc134W7oci4KmX7olGOdeueW",
+    "proofHash": "z7bJ118SRa3Rc8S0v8k6Ga1Y/vGICDekkrB+tp0YVi4=",
+    "nonMandatory": [
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#PermanentResident> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/birthDate> \"1958-07-17T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/familyName> \"DOE\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/gender> \"MALE\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/givenName> \"JOHN\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/image> <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4v43hPwAHIgK1v4tX6wAAAABJRU5ErkJggg==> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#birthCountry> \"Bahamas\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#commuterClassification> \"C1\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#permanentResidentCard> _:b0 .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#residentSince> \"2015-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a> <https://www.w3.org/2018/credentials#credentialSubject> <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .\n",
+      "_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#PermanentResidentCard> .\n",
+      "_:b0 <https://schema.org/identifier> \"83627465\" .\n",
+      "_:b0 <https://w3id.org/citizenship#lprCategory> \"C09\" .\n",
+      "_:b0 <https://w3id.org/citizenship#lprNumber> \"999-999-999\" .\n"
+    ],
+    "mandatoryHash": "UpJRbOZyR2BzoEJLIB9+51raTGCkj2GD6rHvpOcQRjE=",
+    "selectiveIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "presentationHeader": {},
+    "mandatory": [
+      "<urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#PermanentResidentCardCredential> .\n",
+      "<urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .\n",
+      "<urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a> <https://www.w3.org/2018/credentials#issuer> <did:example:alice> .\n",
+      "<urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a> <https://www.w3.org/2018/credentials#validFrom> \"2024-12-16T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a> <https://www.w3.org/2018/credentials#validUntil> \"2025-12-16T23:59:59Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n"
+    ]
+  },
+  "verificationMethod": {
+    "@context": "https://w3id.org/security/multikey/v1",
+    "id": "did:example:alice#key-2",
+    "type": "Multikey",
+    "controller": "did:example:alice",
+    "publicKeyMultibase": "zUC7GuzpYrn6SjZ2WL6YV3Syav9htFwSvrSeCmcNA5YKSvpVKNfZGpKqmpx6omW2zw5KsSSDGxegfYLMMNxK2HFtE85b1MShPrWuDnznFChzJ95o9ZuzqyRJ1MVksANyzGhdgQb"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "verificationMethod": "did:example:alice#key-2",
+    "cryptosuite": "bbs-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0DhVkBUI5O89u6J7zAJhl2a-Vb8AcwulEKZa9WD9dkFWryLKWDzIGjzn8C8ueixVYUHQytK40n9qNQbyIPfoQtnbu0RISwIN4cMQGpBDlMIz326nMK6xxDQUKgWgq4BkGXpr1VBIEW71zJiHkCKC0q4MMSwyN77vwVvEOc8DDJW-KeSOqFXhOERSzLLAncE9I7muF2yglK61M69Hhck6ZugTnpsu2SAUJTgOL5Y8pPSiqR2cZiQwbQ1bK2pRH_A6KB1OwA9UNqgNdAu0bQjLUZ85JlnVdTn_BKFqn_OyQA3SFCtfpsbxFdMwArlyCQPBh_CzO4All80H6kZUwAoPDWnIHpZ72-f4FAPtOWm5wMpf2u9x0oEaazfwU97PPk-ZuRuWkH-QfbjpfOubEb-tyRPpf5GJJBp3_jjOdSLto8sBnjOQnNd-Fu6HIuCpl-6JRjnXrnlqEAAIULDA4PEJAAAQIDBAUGBwgJCg0ODxARQA"
+  }
+}

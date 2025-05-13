@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/vdl/v2",
+    "https://w3id.org/vdl/aamva/v1",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "validFrom": "2023-12-03T12:19:52Z",
+  "validUntil": "2028-12-03T12:19:52Z",
+  "type": [
+    "VerifiableCredential",
+    "Iso18013DriversLicenseCredential"
+  ],
+  "name": "Utopia Driver's License",
+  "image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUg...kSuQmCC",
+  "description": "A license granting driving privileges in Utopia.",
+  "credentialSubject": {
+    "type": "LicensedDriver",
+    "driversLicense": {
+      "type": "Iso18013DriversLicense",
+      "document_number": "542426814",
+      "family_name": "DOE",
+      "given_name": "JOHN",
+      "portrait": "data:image/jpeg;base64,/9j/4AAQSkZJR...RSClooooP/2Q==",
+      "issue_date": "2023-01-15T10:00:00-07:00",
+      "expiry_date": "2028-08-27T12:00:00-06:00",
+      "issuing_country": "UA",
+      "issuing_authority": "UADMV",
+      "driving_privileges": [
+        {
+          "codes": [
+            {
+              "code": "D"
+            }
+          ],
+          "vehicle_category_code": "D",
+          "issue_date": "2019-01-01",
+          "expiry_date": "2027-01-01"
+        },
+        {
+          "codes": [
+            {
+              "code": "C"
+            }
+          ],
+          "vehicle_category_code": "C",
+          "issue_date": "2019-01-01",
+          "expiry_date": "2017-01-01"
+        }
+      ],
+      "un_distinguishing_sign": "UTA",
+      "aamva_aka_suffix": "1ST",
+      "sex": 2,
+      "aamva_family_name_truncation": "N",
+      "aamva_given_name_truncation": "N"
+    },
+    "id": "did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb"
+  },
+  "issuer": {
+    "id": "did:example:bob"
+  },
+  "id": "urn:uuid:e3f3cb48-c144-43e7-9682-ae1ca51916cb",
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2025-05-13T16:41:30Z",
+    "verificationMethod": "did:example:bob#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z4d8PXaH7Vnn35ipHhDEK4JSyVK9eEouT5tX5HFWDBSxtJWfy5YpnijJk2hZhToPTY7w7GDbBUHV6VC5hUiWEC8Rn"
+  }
+}

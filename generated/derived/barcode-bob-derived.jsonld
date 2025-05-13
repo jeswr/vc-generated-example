@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/vdl/v2",
+    "https://w3id.org/vdl/aamva/v1"
+  ],
+  "id": "urn:uuid:10679b64-5ff3-490c-bdd6-262fcafca9fb",
+  "type": [
+    "VerifiableCredential",
+    "Iso18013DriversLicenseCredential"
+  ],
+  "issuer": {
+    "id": "did:example:bob"
+  },
+  "validFrom": "2023-12-03T12:19:52Z",
+  "validUntil": "2028-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb",
+    "type": "LicensedDriver",
+    "driversLicense": {
+      "type": "Iso18013DriversLicense",
+      "document_number": "542426814",
+      "family_name": "DOE",
+      "given_name": "JOHN",
+      "portrait": "data:image/jpeg;base64,/9j/4AAQSkZJR...RSClooooP/2Q==",
+      "issue_date": "2023-01-15T10:00:00-07:00",
+      "expiry_date": "2028-08-27T12:00:00-06:00",
+      "issuing_country": "UA",
+      "issuing_authority": "UADMV",
+      "driving_privileges": [
+        {
+          "codes": [
+            {
+              "code": "D"
+            }
+          ],
+          "vehicle_category_code": "D",
+          "issue_date": "2019-01-01",
+          "expiry_date": "2027-01-01"
+        },
+        {
+          "codes": [
+            {
+              "code": "C"
+            }
+          ],
+          "vehicle_category_code": "C",
+          "issue_date": "2019-01-01",
+          "expiry_date": "2017-01-01"
+        }
+      ],
+      "un_distinguishing_sign": "UTA",
+      "aamva_aka_suffix": "1ST",
+      "sex": 2,
+      "aamva_family_name_truncation": "N",
+      "aamva_given_name_truncation": "N"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "verificationMethod": "did:example:bob#key-2",
+    "cryptosuite": "bbs-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0DhVkBcIusk6eD25XbCDLjTaRdxIyQV9G-6DxeDc62INZ7l8TLmYkC5oPUS8ZPTWyjOOkoyoWFkNaJGVU2v2oDdrx4LERUofjuv1jRNZCvDXyELc4nHGNXiZcHEtxnHMPOVn8HC6F1xGDXs3ZBqSN3DcFF0JaJRZnW72gvS0YdaxoNM21GR9bY3Gu1im7x8emY2q6Oh1_z2HnZuVChcmCsC8NVcOqkM2wiU3cXCTWDXCtm5TwLLSX5BI4zakAdZiXKFvUyTsTEJ97aC0hPttB0xIxKERxIfUGVg8WPw8WTb68owcHoXM-DB4O-0ao6gEXXyfXZ7TJ6rrPFYigxFISYYrfm7xcwANyPtCZEs85o3TeFEPxiXluzoV2nA7Z_YzKQjyhpyBjAgb8TTjzQ2hmH_resQY5KmfwkXLqtzLCAV-v5jnZ6cpVuqk6d3prX5CR7iZKiPDn0cb64LngQpZDIZnRxAkeaJ3L22sfmt9DCDIrKQWpJoQAAhQIDBQYHkgABBQYHCAkKCwwNDg8QERITFEA"
+  }
+}

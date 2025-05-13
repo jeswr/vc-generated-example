@@ -1,0 +1,23 @@
+{
+  "verifyData": {
+    "proofHash": "4d19c7d2d7bc629045145b667b8e36100bf5486bd8eeaadf8c60316e2ec10af3",
+    "docHash": "a899de277466d4e14ba7b320a169bce790941bb7864b9550cbd16f29ee4cf438",
+    "concatHash": "4d19c7d2d7bc629045145b667b8e36100bf5486bd8eeaadf8c60316e2ec10af3a899de277466d4e14ba7b320a169bce790941bb7864b9550cbd16f29ee4cf438",
+    "canonicalProof": "_:c14n0 <http://purl.org/dc/terms/created> \"2025-05-13T16:41:30Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#Ed25519Signature2020> .\n_:c14n0 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> .\n_:c14n0 <https://w3id.org/security#verificationMethod> <did:example:alice#key-1> .\n",
+    "canonicalDocument": "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#PermanentResident> .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/birthDate> \"1958-07-17T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/familyName> \"DOE\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/gender> \"MALE\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/givenName> \"JOHN\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/image> <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4v43hPwAHIgK1v4tX6wAAAABJRU5ErkJggg==> .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#birthCountry> \"Bahamas\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#commuterClassification> \"C1\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#permanentResidentCard> _:c14n0 .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#residentSince> \"2015-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#PermanentResidentCardCredential> .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <https://schema.org/description> \"Government of Utopia Permanent Resident Card.\" .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <https://schema.org/name> \"Permanent Resident Card\" .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <https://www.w3.org/2018/credentials#credentialSubject> <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <https://www.w3.org/2018/credentials#issuer> <did:example:alice> .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <https://www.w3.org/2018/credentials#validFrom> \"2024-12-16T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<urn:uuid:f4491f05-0139-4bd6-b523-252a769fad0d> <https://www.w3.org/2018/credentials#validUntil> \"2025-12-16T23:59:59Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#PermanentResidentCard> .\n_:c14n0 <https://schema.org/identifier> \"83627465\" .\n_:c14n0 <https://w3id.org/citizenship#lprCategory> \"C09\" .\n_:c14n0 <https://w3id.org/citizenship#lprNumber> \"999-999-999\" .\n"
+  },
+  "verificationMethod": {
+    "@context": "https://w3id.org/security/multikey/v1",
+    "id": "did:example:alice#key-1",
+    "type": "Multikey",
+    "controller": "did:example:alice",
+    "publicKeyMultibase": "z6MkfQggpLhJoobbJPFwJYuqhrEAqwMFMbpX5duDVsWVXy93"
+  },
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2025-05-13T16:41:30Z",
+    "verificationMethod": "did:example:alice#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z2rqoFm2FexYYmCwf4VeodNWKWgYb3oVkpn4Wv2N8oHNK7KvGKiFAYzHreG5gCKFv62x697TNV7ZcJjKrtBuNJfrT"
+  }
+}

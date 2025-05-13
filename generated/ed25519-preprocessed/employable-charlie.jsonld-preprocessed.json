@@ -1,0 +1,23 @@
+{
+  "verifyData": {
+    "proofHash": "f91284995657a78e3fd04ee9bd4fd9aaeadc515148138adae7b2fc1181419ad6",
+    "docHash": "02c5f90c7915eb9bc7f184b9532da53948a6dcd9dbe7963371b64fe62efe4d97",
+    "concatHash": "f91284995657a78e3fd04ee9bd4fd9aaeadc515148138adae7b2fc1181419ad602c5f90c7915eb9bc7f184b9532da53948a6dcd9dbe7963371b64fe62efe4d97",
+    "canonicalProof": "_:c14n0 <http://purl.org/dc/terms/created> \"2025-05-13T16:41:30Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#Ed25519Signature2020> .\n_:c14n0 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> .\n_:c14n0 <https://w3id.org/security#verificationMethod> <did:example:charlie#key-1> .\n",
+    "canonicalDocument": "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#EmployablePerson> .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/additionalName> \"JACOB\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/birthDate> \"1958-07-17T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/familyName> \"DOE\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/gender> \"Male\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/givenName> \"JOHN\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#birthCountry> \"Bahamas\" .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#employmentAuthorizationDocument> _:c14n0 .\n<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#residentSince> \"2015-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#EmploymentAuthorizationDocumentCredential> .\n<urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .\n<urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c> <https://www.w3.org/2018/credentials#credentialSubject> <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .\n<urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c> <https://www.w3.org/2018/credentials#issuer> <did:example:charlie> .\n<urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c> <https://www.w3.org/2018/credentials#validFrom> \"2023-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c> <https://www.w3.org/2018/credentials#validUntil> \"2028-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#EmploymentAuthorizationDocument> .\n_:c14n0 <https://schema.org/identifier> \"83627465\" .\n_:c14n0 <https://w3id.org/citizenship#lprCategory> \"C09\" .\n_:c14n0 <https://w3id.org/citizenship#lprNumber> \"999-999-999\" .\n"
+  },
+  "verificationMethod": {
+    "@context": "https://w3id.org/security/multikey/v1",
+    "id": "did:example:charlie#key-1",
+    "type": "Multikey",
+    "controller": "did:example:charlie",
+    "publicKeyMultibase": "z6MksKgR4LUL7BjwCL134B9RRxeMvYBChce3Cft5dhFGpyWs"
+  },
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2025-05-13T16:41:30Z",
+    "verificationMethod": "did:example:charlie#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z9raJpd5zCeQ1xaDvffZaEhc8Nj82my9g3dFk3kj6VSGcfZgpyxCEQ3CvTTWwQLzHLSsoaQZzj3Dp61x2Uu3hqmw"
+  }
+}

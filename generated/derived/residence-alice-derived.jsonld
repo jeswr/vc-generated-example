@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v4rc1"
+  ],
+  "id": "urn:uuid:dcdd7696-b1bc-42ca-8313-f98a7bf3d72a",
+  "type": [
+    "VerifiableCredential",
+    "PermanentResidentCardCredential"
+  ],
+  "issuer": {
+    "id": "did:example:alice"
+  },
+  "validFrom": "2024-12-16T00:00:00Z",
+  "validUntil": "2025-12-16T23:59:59Z",
+  "credentialSubject": {
+    "id": "did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb",
+    "type": [
+      "PermanentResident",
+      "Person"
+    ],
+    "givenName": "JOHN",
+    "familyName": "DOE",
+    "gender": "MALE",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4v43hPwAHIgK1v4tX6wAAAABJRU5ErkJggg==",
+    "residentSince": "2015-01-01T00:00:00Z",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17T00:00:00Z",
+    "commuterClassification": "C1",
+    "permanentResidentCard": {
+      "type": [
+        "PermanentResidentCard"
+      ],
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "verificationMethod": "did:example:alice#key-2",
+    "cryptosuite": "bbs-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0DhVkBUI5O89u6J7zAJhl2a-Vb8AcwulEKZa9WD9dkFWryLKWDzIGjzn8C8ueixVYUHQytK40n9qNQbyIPfoQtnbu0RISwIN4cMQGpBDlMIz326nMK6xxDQUKgWgq4BkGXpr1VBIEW71zJiHkCKC0q4MMSwyN77vwVvEOc8DDJW-KeSOqFXhOERSzLLAncE9I7muF2yglK61M69Hhck6ZugTnpsu2SAUJTgOL5Y8pPSiqR2cZiQwbQ1bK2pRH_A6KB1OwA9UNqgNdAu0bQjLUZ85JlnVdTn_BKFqn_OyQA3SFCtfpsbxFdMwArlyCQPBh_CzO4All80H6kZUwAoPDWnIHpZ72-f4FAPtOWm5wMpf2u9x0oEaazfwU97PPk-ZuRuWkH-QfbjpfOubEb-tyRPpf5GJJBp3_jjOdSLto8sBnjOQnNd-Fu6HIuCpl-6JRjnXrnlqEAAIULDA4PEJAAAQIDBAUGBwgJCg0ODxARQA"
+  }
+}

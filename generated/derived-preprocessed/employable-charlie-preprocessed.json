@@ -1,0 +1,63 @@
+{
+  "verifyData": {
+    "bbsProof": "qLHETdGThlLLEx3FgzAZqvwVEXI1fCCt6XOrApzN41X/tDlCgHw+yscf7hD4MeR4s9FyJMhd3v+lC10orOfScY1ffbIfpBZcNNirw/MdzSvFbr1CcggRdzt+jM4Gu9iqkxzub4lnG3LsaZxBQisPw52KYl9LeRsKfeADMGtI57G/VJqEzoPM+13BWXMiCHoSSV19rYadRAtHFSHcBQ/jsSg9cYV8Kwdfi0W/4XPxTCAeZLZr0lOveYdln2g1i/d5pI3fFS3JAe974s6n2QOtziEeSwQNu1mSg3jwoFwjQr6cm4crOaA8G2DxRVsFO3/0byUHYseuvzPfbdHfG/WhbNURkual3zc2/3WunYnTsl4=",
+    "proofHash": "flv1BYZyi9fIjBnP2FOVFxpyciwTwpvEEvPN+EJhw4g=",
+    "nonMandatory": [
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#EmployablePerson> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/additionalName> \"JACOB\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/birthDate> \"1958-07-17T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/familyName> \"DOE\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/gender> \"Male\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://schema.org/givenName> \"JOHN\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#birthCountry> \"Bahamas\" .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#employmentAuthorizationDocument> _:b0 .\n",
+      "<did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> <https://w3id.org/citizenship#residentSince> \"2015-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4> <https://www.w3.org/2018/credentials#credentialSubject> <did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb> .\n",
+      "_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#EmploymentAuthorizationDocument> .\n",
+      "_:b0 <https://schema.org/identifier> \"83627465\" .\n",
+      "_:b0 <https://w3id.org/citizenship#lprCategory> \"C09\" .\n",
+      "_:b0 <https://w3id.org/citizenship#lprNumber> \"999-999-999\" .\n"
+    ],
+    "mandatoryHash": "AqaYDn+DC4vaFUpwWJj41A9On0dRPUDs0GMOw5VvnJU=",
+    "selectiveIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "presentationHeader": {},
+    "mandatory": [
+      "<urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/citizenship#EmploymentAuthorizationDocumentCredential> .\n",
+      "<urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .\n",
+      "<urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4> <https://www.w3.org/2018/credentials#issuer> <did:example:charlie> .\n",
+      "<urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4> <https://www.w3.org/2018/credentials#validFrom> \"2023-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n",
+      "<urn:uuid:053a848d-7259-4257-92b6-088efc20f3b4> <https://www.w3.org/2018/credentials#validUntil> \"2028-12-03T12:19:52Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n"
+    ]
+  },
+  "verificationMethod": {
+    "@context": "https://w3id.org/security/multikey/v1",
+    "id": "did:example:charlie#key-2",
+    "type": "Multikey",
+    "controller": "did:example:charlie",
+    "publicKeyMultibase": "zUC7J5vyCHBE1qTJQcRScwCacrD1adhkzTD4bSoV4cV9TVKQVZiioVPGhMwXqKTpAvMUJy5mojZuHyE42rbdy13YGcc2tqnQCDM3MSHyKkrvzXWcfTrrjzp25DaQaYK8vLDXRLz"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "verificationMethod": "did:example:charlie#key-2",
+    "cryptosuite": "bbs-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0DhVkBEKixxE3Rk4ZSyxMdxYMwGar8FRFyNXwgrelzqwKczeNV_7Q5QoB8PsrHH-4Q-DHkeLPRciTIXd7_pQtdKKzn0nGNX32yH6QWXDTYq8PzHc0rxW69QnIIEXc7fozOBrvYqpMc7m-JZxty7GmcQUIrD8OdimJfS3kbCn3gAzBrSOexv1SahM6DzPtdwVlzIgh6Ekldfa2GnUQLRxUh3AUP47EoPXGFfCsHX4tFv-Fz8UwgHmS2a9JTr3mHZZ9oNYv3eaSN3xUtyQHve-LOp9kDrc4hHksEDbtZkoN48KBcI0K-nJuHKzmgPBtg8UVbBTt_9G8lB2LHrr8z323R3xv1oWzVEZLmpd83Nv91rp2J07JeoQAAhQoLDQ4PjwABAgMEBQYHCAkKCwwNDkA"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v2",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "EmploymentAuthorizationDocumentCredential"
+  ],
+  "validFrom": "2023-12-03T12:19:52Z",
+  "validUntil": "2028-12-03T12:19:52Z",
+  "credentialSubject": {
+    "type": [
+      "Person",
+      "EmployablePerson"
+    ],
+    "givenName": "JOHN",
+    "additionalName": "JACOB",
+    "familyName": "DOE",
+    "gender": "Male",
+    "residentSince": "2015-01-01T00:00:00Z",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17T00:00:00Z",
+    "employmentAuthorizationDocument": {
+      "type": "EmploymentAuthorizationDocument",
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999"
+    },
+    "id": "did:example:b2156a9f-18e5-4b32-85ee-2a129b271ddb"
+  },
+  "issuer": {
+    "id": "did:example:charlie"
+  },
+  "id": "urn:uuid:109a1078-da12-4724-8158-ac79b3571c1c",
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2025-05-13T16:41:30Z",
+    "verificationMethod": "did:example:charlie#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z9raJpd5zCeQ1xaDvffZaEhc8Nj82my9g3dFk3kj6VSGcfZgpyxCEQ3CvTTWwQLzHLSsoaQZzj3Dp61x2Uu3hqmw"
+  }
+}
